@@ -1,20 +1,14 @@
-import Home from './Pages/home.js';
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import './App.css';
+import Home from "./Pages/home";
+import Footer from "./components/Footer";
+// import { BrowserRouter as Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <Switch>
-      <Header />
-        <Route exact path="/">
-          <Home />
-        </Route>
+    <main>
+      <Home />
       <Footer />
-      </Switch>
-    </Router>
+    </main>
   );
 }
 

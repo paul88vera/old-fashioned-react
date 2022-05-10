@@ -1,3 +1,74 @@
+/** MOBILE CSS */
+* {
+  padding: 0%;
+  margin: 0%;
+}
+/* HOMEPAGE CSS */
+#home {
+  background-color: bisque;
+}
+#home-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #231a08;
+  padding: 2em;
+
+}
+#home-header h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#home-header h1 a {
+  color: bisque;
+}
+#home-header h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 1em;
+}
+#home-header h3 a {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+#home-nav {
+  display: flex;
+  display: column;
+  justify-content: center;
+  padding: 5em 2em;
+}
+#home-nav ul {
+  background-color: #231a08b9;
+  padding: 2em;
+  border-radius: 5px;
+}
+#home-nav ul h3 {
+  text-align: center;
+  color: bisque;
+  padding-bottom: 1em;
+}
+#home-nav ul li {
+  margin: .5em;
+  text-align: center;
+
+}
+#home-nav ul li a {
+  color: bisque;
+}
+#home-nav ul li a:hover, #home-header h3 a:hover {
+  color: aquamarine;
+}
+
+
+/** PRESET CSS FOR REACT */
 .App {
   text-align: center;
 }
