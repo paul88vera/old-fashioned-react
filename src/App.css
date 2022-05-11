@@ -54,6 +54,8 @@ li {
   text-align: center;
   color: bisque;
   padding-bottom: 1em;
+  font-weight: 800;
+  font-size: x-large;
 }
 #home-nav ul li {
   margin: .5em;
@@ -62,11 +64,29 @@ li {
 }
 #home-nav ul li a {
   color: bisque;
+  font-weight: 600;
+  font-size: large;
 }
 #home-nav ul li a:hover, #home-header h3 a:hover {
   color: aquamarine;
 }
 
+/* FOOTER CSS */
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+  background-color: #231a08;
+}
+footer ul li a {
+  padding: .5em 1em;
+  color: bisque;
+}
+footer ul li a:hover {
+  color: aquamarine;
+}
 
 /** PRESET CSS FOR REACT */
 .App {
