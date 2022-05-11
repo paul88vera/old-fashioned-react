@@ -1,31 +1,31 @@
-// import Footer from "../components/Footer";
-// import { BrowserRouter as Route } from "react-router-dom";
-// import Header from "../components/Header";
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 function Home() {
   return (
     <section id="home">
       <header id="home-header">
         <h1>
-          <a href="/">Old Fashioned</a>
+          <Link to="/">Old Fashioned</Link>
         </h1>
         <h3>
-          <a href="/Login">Login</a>
+          <Link to="/Login">Login</Link>
         </h3>
       </header>
       <nav id="home-nav">
         <ul>
           <h3>Pick your poison:</h3>
           <li>
-            <a href="/Gin">Gin</a>
+            <Link to="/Gin">Gin</Link>
           </li>
           <li>
-            <a href="/Bourbon">Bourbon</a>
+            <Link to="/Bourbon">Bourbon</Link>
           </li>
           <li>
-            <a href="/Vodka">Vodka</a>
+            <Link to="/Vodka">Vodka</Link>
           </li>
           <li>
-            <a href="/Create">Create your own drink</a>
+            <Link to="/Create">Create your own drink</Link>
           </li>
         </ul>
       </nav>
