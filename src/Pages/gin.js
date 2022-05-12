@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 
-function Gin(){
+export default function Gin(){
   return(
     <section>
       <Header/>
@@ -8,4 +8,3 @@ function Gin(){
     </section>
   )
 }
-export default Gin;

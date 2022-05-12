@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-function Header() {
+export default function Header() {
   return(
-    <header>
+    <header id="header">
+      <div id='close'>X</div>
       <nav>
         <h1><Link to="/">Old Fashioned</Link></h1>
         <ul>
@@ -16,4 +17,3 @@ function Header() {
     </header>
   )
 }
-export default Header;

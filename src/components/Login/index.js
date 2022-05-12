@@ -1,12 +1,10 @@
 import Header from '../Header';
 
-function Login() {
+export default function Login() {
   return(
     <section id="login">
       <Header />
-      Hi there, This is the Login Page
+      This is the Login Page
     </section>
   )
 }
-
-export default Login;

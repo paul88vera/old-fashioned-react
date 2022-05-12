@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 
-function Bourbon(){
+export default function Bourbon(){
   return(
     <section>
       <Header/>
@@ -8,4 +8,3 @@ function Bourbon(){
     </section>
   )
 }
-export default Bourbon;

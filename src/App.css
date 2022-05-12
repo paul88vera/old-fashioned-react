@@ -70,6 +70,62 @@ li {
 #home-nav ul li a:hover, #home-header h3 a:hover {
   color: aquamarine;
 }
+#close {
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 1em;
+  width: fit-content;
+  box-sizing: border-box;
+  border: bisque solid;
+  border-radius: 5px;
+}
+#close:hover {
+  color: aquamarine;
+}
+
+/* 2ND HEADER CSS */
+#header {
+  padding: 2em 1em;
+  display: block;
+  background-color: #231a08;
+}
+#header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#header nav ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#header nav ul li, #header nav h1, #header nav h3 {
+  padding: 1em 0;
+}
+#header nav ul li a, #header nav h1 a {
+  color: bisque;
+  padding: 1em;
+}
+#header nav h3 a {
+  color: white;
+}
+#header nav ul li a:hover, #header nav h1 a:hover, #header nav h3 a:hover{
+  color: aquamarine;
+  border: bisque solid;
+  border-radius: 5px;
+  width: 100%;
+  padding: .5em 2em;
+}
+#header h1 {
+  font-weight: 800;
+  font-size: x-large;
+}
 
 /* FOOTER CSS */
 footer ul {
