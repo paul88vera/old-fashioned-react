@@ -6,7 +6,7 @@ export default function Home() {
     <section id="home">
       <header id="home-header">
         <h1>
-          <Link to="/">Old Fashioned</Link>
+          <Link to="/">Old Fashioned | Bar</Link>
         </h1>
         <h3>
           <Link to="/Login">Login</Link>

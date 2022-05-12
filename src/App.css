@@ -70,7 +70,7 @@ li {
 #home-nav ul li a:hover, #home-header h3 a:hover {
   color: aquamarine;
 }
-#close {
+#open {
   color: white;
   font-weight: 900;
   cursor: pointer;
@@ -80,8 +80,12 @@ li {
   border: bisque solid;
   border-radius: 5px;
 }
-#close:hover {
+#open:hover {
   color: aquamarine;
+}
+
+.closed {
+  display: none;
 }
 
 /* 2ND HEADER CSS */
@@ -146,6 +150,22 @@ footer ul li a:hover {
 
 /** DESKTOP CSS */
 @media only screen and (min-width:768px) {
+  #header nav, #header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #header nav ul li a, #header nav h1 a, #header nav h3 a {
+    padding: 0 1em;
+    margin: 0;
+  }
+  #header nav ul li a:hover, #header nav h1 a:hover, #header nav h3 a:hover{
+    border: none;
+    padding: 0 1em;
+ }
+  #open {
+    display: none;
+  }
   
 }
 
