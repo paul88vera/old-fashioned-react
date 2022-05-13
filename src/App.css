@@ -5,7 +5,12 @@
 }
 /* HOMEPAGE CSS */
 #home {
-  background-color: bisque;
+  background-image: url(../public/pexels-rachel-claire-5490965.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+  height: 86vh;
 }
 #home-header {
   display: flex;
@@ -13,7 +18,6 @@
   align-items: center;
   background-color: #231a08;
   padding: 2em;
-
 }
 #home-header h1 {
   display: flex;
@@ -103,7 +107,6 @@ li {
   justify-content: center;
   align-items: center;
 }
-
 #header nav ul {
   display: flex;
   flex-direction: column;
@@ -143,7 +146,7 @@ li {
 }
 .card {
   width: max-content;
-  padding: 2em 4em;
+  padding: 2em;
   margin: 1em;
   flex-basis: 2;
   display: flex;
@@ -206,6 +209,9 @@ li {
 }
 
 /* FOOTER CSS */
+footer {
+  background-color: #231a08;
+}
 footer ul {
   display: flex;
   flex-direction: row;
@@ -237,7 +243,7 @@ footer ul li a:hover {
     border: none;
     padding: 0 1em;
  }
-  #open {
+  #open, #login #open {
     display: none;
   }
   #login form {
@@ -245,43 +251,3 @@ footer ul li a:hover {
   }
   
 }
-
-/** PRESET CSS FOR REACT */
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

@@ -5,7 +5,6 @@ export default function Login() {
     <section id="login">
       <Header />
       <div>
-
       <form>
         <h2>Sign In</h2>
         <input type="text" placeholder='Username' />
