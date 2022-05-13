@@ -142,7 +142,7 @@ li {
   padding: 3em;
 }
 .card {
-  width: min-content;
+  width: max-content;
   padding: 2em 4em;
   margin: 1em;
   flex-basis: 2;
@@ -153,8 +153,57 @@ li {
   background-color: #231a08a9;
   color: bisque;
 }
-.card-title {}
-.card-group {}
+.card-title {
+  font-weight: 600;
+  font-size: 1.7em;
+  color: white;
+}
+.card-group {
+  padding: 1em 0;
+  font-size: medium;
+}
+/* LOGIN PAGE CSS */
+#login {
+  background-color: bisque;
+}
+#login div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#login form {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 30%;
+  padding: 2em;
+  background-color: #231a0880;
+  border-radius: 5px;
+}
+#login form input {
+  margin: 1em 0;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  outline-color:#231a08;
+}
+#login h2 {
+  text-align: center;
+  color: white;
+  margin: 0 0 1em 0;
+}
+#login form button {
+  border: none;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 5px;
+  background-color: aquamarine;
+  color:#231a08;
+  font-size: 1em;
+  font-weight: 700;
+}
 
 /* FOOTER CSS */
 footer ul {
@@ -190,6 +239,9 @@ footer ul li a:hover {
  }
   #open {
     display: none;
+  }
+  #login form {
+    width: 30%;
   }
   
 }

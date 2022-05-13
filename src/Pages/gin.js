@@ -6,20 +6,12 @@ export default function Gin() {
       <Header />
       <div className="card-section">
         <div className="card">
-          <h3 className="card-title">Drink Title</h3>
-          <ul className="card-group">
-            <li>A</li>
-            <li>Few</li>
-            <li>Ingredients</li>
-          </ul>
+          <h3 className="card-title">Gin Drink Title</h3>
+          <div className="card-group">A few ingredients go here.</div>
         </div>
         <div className="card">
-          <h3 className="card-title">Drink Title 2</h3>
-          <ul className="card-group">
-            <li>A</li>
-            <li>Few</li>
-            <li>Ingredients</li>
-          </ul>
+          <h3 className="card-title">Gin Drink Title 2</h3>
+          <div className="card-group">A few ingredients go here.</div>
         </div>
       </div>
     </section>
