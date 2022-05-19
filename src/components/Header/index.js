@@ -2,11 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const navbarOpen = document.getElementById('nav-container');
+  const navbarClosed = document.getElementById('navbarClosed');
 
+  function disappear() {
+    navbarOpen.classList.add('toggleOff');
+    // navbarClosed.classList.remove('toggleOn');
+  }
+  function appear() {
+    navbarClosed.classList.add('toggleOn');
+    navbarOpen.classList.remove('toggleOff')
+  }
 
   return (
     <header id="header">
-      <div id="open" className="open">
+      <div id="nav-container">
+        <div id="closed" className="toggleOff" onClick={appear}>--</div>
+      <div id="open" className="toggleOn" onClick={disappear}>
         X
       </div>
       <nav className="open">
@@ -28,6 +40,7 @@ export default function Header() {
         </h3>
         </ul>
       </nav>
+      </div>
     </header>
   );
 }

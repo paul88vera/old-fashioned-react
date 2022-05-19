@@ -3,6 +3,13 @@
   padding: 0%;
   margin: 0%;
 }
+/* TOGGLE CSS */
+.toggleOff {
+  display: none;
+}
+.toggleOn {
+  display: block;
+}
 /* HOMEPAGE CSS */
 #home {
   background-image: url(../public/pexels-rachel-claire-5490965.jpg);
@@ -206,8 +213,52 @@ li {
   color:#231a08;
   font-size: 1em;
   font-weight: 700;
+  cursor: pointer;
 }
 
+/* PROFILE PAGE CSS */
+#profile-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#create aside, #drink-profiles {
+  padding: 2em;
+  
+}
+#create aside {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#create aside p {
+  display: flex;
+  flex-direction: column;
+}
+#create .card-section {
+  padding: 0;
+}
+#add-drink {
+  font-weight: 700;
+  font-size: 24px;
+  padding: .5em .8em;
+  margin: 1em auto;
+  border: #231a08 solid;
+  width: fit-content;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#add-drink:hover {
+  box-shadow: 0px 0px 5px black inset;
+}
+#add-drink:active {
+  color: bisque;
+  background-color: #231a08;
+  border-color: bisque;
+}
 /* FOOTER CSS */
 footer {
   background-color: #231a08;
@@ -246,6 +297,7 @@ footer ul li a:hover {
   #open, #login #open {
     display: none;
   }
+
   #login form {
     width: 30%;
   }
