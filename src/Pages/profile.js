@@ -7,29 +7,27 @@ export default function Create() {
       <div id="profile-page">
         <aside>
           <div>
-            <img src="#" alt="" />
+            <img src="https://unsplash.it/100/100" alt="" />
           </div>
           <div>
             <p>Jack Reacher</p>
-            <p>User Profile</p>
+            <p>User Description</p>
           </div>
-          <ul>
-            <li>Settings</li>  
-            <li>About</li>
-            <li>Contact Us</li>
-          </ul>
+          <div id="add-drink">+</div>
         </aside>
 
         <div id="drink-profiles">
-          <div id="add-drink">+</div>
+          
           {/* {Drinks} */}
           <div className="card-section">
             <div className="card">
+              <img src="https://unsplash.it/200/200" alt="" />
               <h3 className="card-title">Gin Drink Title</h3>
               <div className="card-group">A few ingredients go here.</div>
             </div>
 
             <div className="card">
+              <img src="https://unsplash.it/200/200" alt="" />
               <h3 className="card-title">Gin Drink Title 2</h3>
               <div className="card-group">A few ingredients go here.</div>
             </div>

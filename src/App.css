@@ -1,11 +1,21 @@
 /** MOBILE CSS */
+:root {
+  --main-color: #231a08;
+  --secondary-color: bisque;
+  --tertiary-color: aquamarine;
+  --main-tran-color: #231a08b9;
+  --white-color: white;
+  --secondary-border-color: bisque 2px solid;
+  --box-shadow: 0px 6px 14px rgb(0, 0, 0);
+}
 * {
   padding: 0%;
   margin: 0%;
 }
 /* TOGGLE CSS */
 .toggleOff {
-  display: none;
+  display:none;
+  visibility: hidden;
 }
 .toggleOn {
   display: block;
@@ -17,14 +27,17 @@
   background-repeat: no-repeat;
   background-origin: border-box;
   background-position: center;
-  height: 86vh;
+  /* height: 86vh; */
+  height: auto;
 }
 #home-header {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  background-color: #231a08;
+
+  background-color: var(--main-color);
   padding: 2em;
+  border-bottom: var(--secondary-border-color);
 }
 #home-header h1 {
   display: flex;
@@ -32,7 +45,8 @@
   width: 100%;
 }
 #home-header h1 a {
-  color: bisque;
+  color: var(--secondary-color);
+  letter-spacing: .1em;
 }
 #home-header h3 {
   display: flex;
@@ -42,7 +56,15 @@
   padding-top: 1em;
 }
 #home-header h3 a {
-  color: white;
+  color: var(--main-color);
+  letter-spacing: .1em;
+  background-color: var(--tertiary-color);
+  padding: .3em .5em;
+  border-radius: 5px;
+}
+#home-header h3 a:hover {
+  background-color: var(rgb(128, 187, 167));
+  color: var(--main-color);
 }
 a {
   text-decoration: none;
@@ -54,46 +76,51 @@ li {
   display: flex;
   display: column;
   justify-content: center;
-  padding: 5em 2em;
+  padding: 8em 5em;
 }
 #home-nav ul {
-  background-color: #231a08b9;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-tran-color);
+  border: var(--secondary-border-color);
   padding: 2em;
   border-radius: 5px;
 }
 #home-nav ul h3 {
   text-align: center;
-  color: bisque;
+  color: var(--secondary-color);
   padding-bottom: 1em;
   font-weight: 800;
   font-size: x-large;
 }
 #home-nav ul li {
-  margin: .5em;
+  margin: .7em;
   text-align: center;
-
 }
 #home-nav ul li a {
-  color: bisque;
+  color: var(--secondary-color);
   font-weight: 600;
   font-size: large;
+  padding: .3em 0;
+  letter-spacing: .1em;
 }
-#home-nav ul li a:hover, #home-header h3 a:hover {
-  color: aquamarine;
+#home-nav ul li a:hover {
+  border-bottom: var(--tertiary-color) 2px solid;
 }
-#open {
-  color: white;
+
+/* #open {
+  color: var(--white-color);
   font-weight: 900;
   cursor: pointer;
   padding: 1em;
   width: fit-content;
   box-sizing: border-box;
-  border: bisque solid;
+  border: var(--secondary-color) solid;
   border-radius: 5px;
 }
 #open:hover {
-  color: aquamarine;
-}
+  color: var(--tertiary-color);
+} */
 
 .closed {
   display: none;
@@ -101,9 +128,10 @@ li {
 
 /* 2ND HEADER CSS */
 #header {
-  padding: 2em 1em;
+  padding: 0 1em;
   display: block;
-  background-color: #231a08;
+  background-color: var(--main-color);
+  border-bottom: var(--secondary-border-color);
 }
 #header nav {
   width: 100%;
@@ -111,7 +139,7 @@ li {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 #header nav ul {
@@ -123,15 +151,26 @@ li {
   padding: 1em 0;
 }
 #header nav ul li a, #header nav h1 a {
-  color: bisque;
+  color: var(--secondary-color);
   padding: 1em;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+#header nav h3 {
+  background-color: var(--tertiary-color);
+  padding: .3em .5em;
+  border-radius: 5px;
+}
+#header nav h3 a:hover {
+  background-color: var(rgb(128, 187, 167));
+  color: var(--main-color);
 }
 #header nav h3 a {
-  color: white;
+  color: var(--main-color);
 }
-#header nav ul li a:hover, #header nav h1 a:hover, #header nav h3 a:hover{
-  color: aquamarine;
-  border: bisque solid;
+#header nav ul li a:hover, #header nav h1 a:hover {
+  color: var(--tertiary-color);
+  border: var(--secondary-color) solid;
   border-radius: 5px;
   width: 100%;
   padding: .5em 2em;
@@ -142,7 +181,7 @@ li {
 }
 /* DRINK PAGES CSS */
 #gin, #vodka, #bourbon, #create {
-  background-color: bisque;
+  background-color: var(--secondary-color);
 }
 .card-section {
   display: flex;
@@ -160,13 +199,20 @@ li {
   flex-direction: column;
   flex-wrap: wrap;
   border-radius: 5px;
-  background-color: #231a08a9;
-  color: bisque;
+  background-color: var(--main-tran-color);
+  color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+
+}
+.card img {
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
 }
 .card-title {
   font-weight: 600;
   font-size: 1.7em;
-  color: white;
+  margin: .5em 0 0 0;
+  color: var(--white-color);
 }
 .card-group {
   padding: 1em 0;
@@ -174,7 +220,7 @@ li {
 }
 /* LOGIN PAGE CSS */
 #login {
-  background-color: bisque;
+  background-color: var(--secondary-color);
 }
 #login div {
   display: flex;
@@ -189,7 +235,7 @@ li {
   width: 100%;
   min-width: 30%;
   padding: 2em;
-  background-color: #231a0880;
+  background-color: var(--main-tran-color);
   border-radius: 5px;
 }
 #login form input {
@@ -197,11 +243,11 @@ li {
   padding: 1em;
   border: none;
   border-radius: 5px;
-  outline-color:#231a08;
+  outline-color:var(--main-color);
 }
 #login h2 {
   text-align: center;
-  color: white;
+  color: var(--white-color);
   margin: 0 0 1em 0;
 }
 #login form button {
@@ -209,13 +255,12 @@ li {
   padding: 1em;
   margin: 1em 0;
   border-radius: 5px;
-  background-color: aquamarine;
-  color:#231a08;
+  background-color: var(--tertiary-color);
+  color:var(--main-color);
   font-size: 1em;
   font-weight: 700;
   cursor: pointer;
 }
-
 /* PROFILE PAGE CSS */
 #profile-page {
   display: flex;
@@ -224,19 +269,23 @@ li {
 }
 #create aside, #drink-profiles {
   padding: 2em;
-  
 }
 #create aside {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--white-color);
   width: 100%;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 #create aside p {
   display: flex;
   flex-direction: column;
+  margin: 1em 0;
+}
+#create aside img {
+  border-radius: 50%;
 }
 #create .card-section {
   padding: 0;
@@ -246,22 +295,32 @@ li {
   font-size: 24px;
   padding: .5em .8em;
   margin: 1em auto;
-  border: #231a08 solid;
+  border: var(--main-color) solid;
   width: fit-content;
   border-radius: 5px;
   cursor: pointer;
 }
 #add-drink:hover {
-  box-shadow: 0px 0px 5px black inset;
+  box-shadow: var(--box-shadow);
 }
 #add-drink:active {
-  color: bisque;
-  background-color: #231a08;
-  border-color: bisque;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  border-color: var(--secondary-color);
+}
+.drink-info {
+  padding: .5em 2em;
+  justify-content: left;
+  line-height: 24px;
+  text-align: justify;
+}
+.drink-info h1 {
+  padding: .5em 0;
 }
 /* FOOTER CSS */
 footer {
-  background-color: #231a08;
+  background-color: var(--main-color);
+  border-top: var(--secondary-border-color);
 }
 footer ul {
   display: flex;
@@ -269,16 +328,15 @@ footer ul {
   justify-content: center;
   align-items: center;
   padding: 3em 0;
-  background-color: #231a08;
+  background-color: var(--main-color);
 }
 footer ul li a {
   padding: .5em 1em;
-  color: bisque;
+  color: var(--secondary-color);
 }
 footer ul li a:hover {
-  color: aquamarine;
+  color: var(--tertiary-color);
 }
-
 /** DESKTOP CSS */
 @media only screen and (min-width:768px) {
   #header nav, #header nav ul {
@@ -297,9 +355,15 @@ footer ul li a:hover {
   #open, #login #open {
     display: none;
   }
-
   #login form {
     width: 30%;
   }
-  
+  #profile-page {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #create aside {
+    max-width: 250px;
+    padding: 1em 0;
+  }
 }
