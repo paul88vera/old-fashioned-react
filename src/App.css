@@ -34,9 +34,8 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-
   background-color: var(--main-color);
-  padding: 2em;
+  padding: 1.35em;
   border-bottom: var(--secondary-border-color);
 }
 #home-header h1 {
@@ -53,7 +52,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 1em;
 }
 #home-header h3 a {
   color: var(--main-color);
@@ -128,7 +126,7 @@ li {
 
 /* 2ND HEADER CSS */
 #header {
-  padding: 0 1em;
+  padding: 1em;
   display: block;
   background-color: var(--main-color);
   border-bottom: var(--secondary-border-color);
